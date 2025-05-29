@@ -1,0 +1,198 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #1F2937;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 16px 250px;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a, .welcome-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.welcome-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 1000;
+}
+
+.welcome-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.welcome-title, .welcome-text {
+    text-align: left;
+}
+
+.welcome {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px 250px;
+}
+
+.welcome-info button, .reminder button {
+    background-color: #3882F6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    flex-grow: 0;
+    align-self: flex-start;
+}
+
+.reminder button {
+    border: 2px white solid;
+}
+
+.information {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 100px; */
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-shrink: 0; */
+    width: 80%;
+}
+
+.information h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+img {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.welcome img {
+    border-radius: 8px;
+    min-width: 450px;
+    min-height: 250px;
+}
+
+.card {
+    padding: 5px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.card img {
+    border: 3px solid #3882F6;
+    border-radius: 16px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 50px 400px;
+    font-size: 24px;
+}
+
+.quote .testimonial {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote .author {
+    text-align: right;
+    padding-right: 32px;
+}
+
+.reminder {
+    background-color: white;
+    padding: 50px 250px;
+}
+
+.actionBg {
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.call-title {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.callToAction {
+    text-align: left;
+}
+
+footer {
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 0;
+}
+
+.footer {
+    /* flex: 0 0 0; */
+}
