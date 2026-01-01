@@ -1,116 +1,377 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="header-logo">Portfolio</div>
-            <div class="header-links">
-                <nav>
-                    <ul>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#project-cards">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Personal Website</title>
+<meta name="description" content="Portfolio Website" />
+<link rel="icon" href="#" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">GS</div>
+        <div>
+          <h1>Guhfran Shuhood</h1>
+          <p>Computer Science • Cybersecurity • Cloud/Networks</p>
+        </div>
+      </div>
 
-        <main>
-            <div class="welcome">
-                <div class="welcome-info">
-                    <div class="welcome-title">This is my portfolio site.</div>
-                    <br />
-                    <div class="welcome-text">I graduated Summa Cum Laude from Stony Brook University (SUNY) on May 2025 with a Bachelor of Science in Computer Science. I also double majored in Applied Mathematics and took several cybersecurity electives like Offensive Security and Web Security. Currently, I am honing my skillsets and actively looking for career opportunity to further grow and develop in the fields of cybersecurity and software development.</div>
-                    <br />
-                    <button type="button">Contact</button>
-                </div>
-                <img src="images/space.jpg" alt="This is a placeholder for an image"/>
-            </div>
+      <nav aria-label="Main navigation">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
 
-            <div id="project-cards" class="information">
-                <h2>Highlight Projects & Research</h2>
-                <div class="container">
-                    <div class="card">
-                        <img src="images/lfp_image.png" />
-                        <p>Lifetime Financial Planner</p>
-                        <p>Planner that allows users to model the outcomes of investments, events, and decisions like retirement age. It includes decisions about assets (expense, investment, income), various taxes, and the type of retirement accounts. Allows users to visually model the financial effects of life events, or customize and replay shared scenarios.</p>
-                        <div class="skillsets">
-                            <div>MongoDB</div>
-                            <div>ReactJS</div>
-                            <div>Express/Node</div>
-                            <div>BCrypt</div>
-                            <div>Google OAuth2</div>
-                            <div>ChartsJS</div>
-                        </div>
-                        <div class="projectSrc">
-                            <a href="#">Source: Due to Oauth, images will have to suffice for now. </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/qa_image.png" />
-                        <p>QA Platform</p>
-                        <p>Developed a Question-Answer platform, with features such as tags, comments, likes/dislikes, user/admin profiles. Security practices such as salted passwords with Bcrypt, and Express sessions for user authentication.</p>
-                        <div class="skillsets">
-                            <div>MongoDB</div>
-                            <div>React</div>
-                            <div>Express/Node</div>
-                            <div>BCrypt</div>
-                            <div>Cookies</div>
-                        </div>
-                        <div class="projectSrc">
-                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/shabudeen03/QA_Platform">Source</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/fi_image.png" />
-                        <p>Food Insecurity</p>
-                        <p>A web application with list of searchable food pantries and their items, user profiles, and recipes page to add/share recipes. Followed best practices—structured directory layout, authenticated routes, error handling, and secure SQL queries.</p>
-                        <div class="skillsets">
-                            <div>PostgreSQL</div>
-                            <div>Express/Node</div>
-                            <div>EJS Templates</div>
-                        </div>
-                        <div class="projectSrc">
-                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/shabudeen03/FoodInsecurity">Source</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/research_image.png" />
-                        <p>Research Showcase</p>
-                        <p>A folder of various research examining food insecurity, environmental impact of data centers, online tutoring solutions, and drafting software products.</p>
-                        <div class="skillsets">
-                            <div>Research</div>
-                            <div>Writing</div>
-                            <div>Media</div>
-                            <div>Analytics</div>
-                            <div>Collaboration</div>
-                        </div>
-                        <div class="projectSrc">
-                            <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/drive/u/0/folders/1BLtGYlSJ8yD4QDF1Eq6KP7XnMx7ZXOOF">Source</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="quote">
-                <p class="testimonial">It takes hardwork to achieve success, but learning from failures and mistakes to maintain success and further succeed.</p>
-                <div class="author">- I, Me, Myself</div>
-            </div>
-            <div class="reminder">
-                <div class="actionBg">
-                    <div class="callToAction">
-                        <div class="call-title">Impressed!? It's time!</div>
-                        <div class="call-text">Feel free to contact me by clicking that button right over there!</div>
-                    </div>
-                    <button type="button">Contact</button>
-                </div>
-            </div>
-        </main>
+    <section class="hero" id="about">
+      <div>
+        <h2 class="fade-in">Hi — I am Guhfran Shuhood!</h2>
+        <p class="fade-in" style="margin-top:6px">
+          Master's student with a focus on cybersecurity, software development, and cloud computing.
+          I build programs, conduct security research, and enjoy solving problems.
+        </p>
 
-        <footer>
-            <div class="footer">Copyright &copy; Shabudeen03 Portfolio Site</div>
-        </footer>
-    </body>
+        <div class="links" aria-hidden="false">
+          <a class="cta" href="#" onclick="downloadResume();return false" title="Download resume">Resume</a>
+          <a class="cta" href="https://github.com/shabudeen03" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <aside style="display:flex;flex-direction:column;align-items:center;gap:12px">
+        <div class="profile" role="img" aria-label="Profile photo">
+          <div style="text-align:center">
+            <div style="font-weight:700;font-size:28px">GS</div>
+            <div style="font-size:12px;color:var(--muted)">Guhfran Shuhood</div>
+          </div>
+        </div>
+
+        <div style="text-align:center;color:var(--muted);font-size:13px">
+          <div style="margin-top:6px"><span style="color:var(--accent);font-weight:700">Open to full-time opportunities</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="education" class="two-col fade-in" aria-labelledby="education-heading">
+      <div>
+        <h3 id="education-heading">Education</h3>
+        <div class="edu-card" role="article" aria-label="Education card">
+          <h4>New York University — M.S. Cybersecurity</h4>
+          <p><strong>Honors:</strong> NYU Cyber Fellow</p>
+          <p><strong>Expected Graduation:</strong> May 2028</p>
+          <p><strong>Relevant Coursework:</strong></p>
+          <ul style="margin:6px 0 0 18px;color:var(--muted)">
+            <li>Information, Security, & Privacy</li>
+            <li>Computer Networking</li>
+            <li>Network Security</li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div class="edu-card" role="article" aria-label="Education card">
+          <h4>B.S. Computer Science — Stony Brook University</h4>
+          <p><strong>Honors:</strong> Summa Cum Laude, Academic Achievement, University Scholar</p>
+          <p><strong>Graduation:</strong> May 2025</p>
+          <p><strong>Relevant Coursework:</strong></p>
+          <ul style="margin:6px 0 0 18px;color:var(--muted)">
+            <li>Offensive Security, Software Security, Web Security</li>
+            <li>Software Engineering, Software Development</li>
+            <li>Systems Administration, Computer Networks</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="chip">Python • JavaScript • Bash</div>
+          <div class="chip">Node/Express • React</div>
+          <div class="chip">MongoDB • SQLite</div>
+          <div class="chip">Docker • Git • VMware</div>
+          <div class="chip">Linux • Windows</div>
+          <div class="chip">Splunk • Wireshark • Scapy</div>
+        </div>
+      </div>
+
+      <aside>
+        <h3>Extracurriculars</h3>
+        <div style="margin-top:8px">
+          <div class="exp-item">
+            <h4>Offensive Security, Incident Response, and Internet Security Lab</h4>
+            <p class="muted">Security Projects, CTF Challenges.</p>
+          </div>
+          <div class="exp-item">
+            <h4>Immersive Labs</h4>
+            <p class="muted">Technical & Practical Hands-on cybersecurity labs.</p>
+          </div>
+          <div class="exp-item">
+            <h4>Cybersecurity Club</h4>
+            <p class="muted">Workshops, Career Events, and CTFs.</p>
+          </div>
+          <div class="exp-item">
+            <h4>NYU LeetCode Bootcamp</h4>
+            <p class="muted">Technical Interview Preparation.</p>
+          </div>
+          <div class="exp-item">
+            <h4>Basta x Google SWE Program</h4>
+            <p class="muted">Mentorship, Data Structures & Algorithms.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="fade-in">
+      <h3>Certificates & Badges</h3>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px">
+        <div style="flex:1;min-width:260px">
+          <h4>Certificates</h4>
+          <div class="chips" style="margin-top:8px">
+            <div class="chip">ISC2 Certified in Cybersecurity (CC)</div>
+            <div class="chip">Oracle Cloud Infrastructure (OCI) AI Foundations</div>
+            <div class="chip">Oracle Cloud Infrastructure (OCI) Foundations Associate</div>
+          </div>
+        </div>
+
+        <div style="flex:1;min-width:260px">
+          <h4>Badges</h4>
+          <div style="margin-top:8px" class="chips">
+            <div class="chip">Immersive Labs CyberMillion</div>
+            <div class="chip">NYU Tandon Leetcode Bootcamp</div>
+            <div class="chip">Linux Fundamentals</div>
+            <div class="chip">Netacad Networking Fundamentals</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="fade-in" aria-labelledby="experience-heading">
+      <h3 id="experience-heading">Work Experience</h3>
+
+      <div>
+        <div class="exp-item">
+          <h4>Systems Administration TA — Stony Brook University</h4>
+          <p>Jan. 2025 — May. 2025</p>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Configured 60+ Windows Server Virtual Machines for students, including guidance with AWS EC2 instances.</li>
+            <li>Implemented password policies and user account security rules through Microsoft Management Console (MMC).</li>
+            <li>Assisted students with remote access protocols (SSH, RDP), port forwarding, and log analysis (syslog, apache).</li>
+            <li>Conducted 6 weekly office hour sessions, provided support on the Piazza Q&A platform, and attended workshops.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h4>Technology Assistant Facilitator — CUNY Medgar Evers College</h4>
+          <p>Jun. 2024 — Aug. 2024</p>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Provided technical support, including troubleshooting AV hardware and software applications for onsite operations.</li>
+            <li>Delivered 3 hour workshops on Generative AI, regarding prompt engineering, ethics, and fair use for 120+ students.</li>
+            <li>Assisted in logistics for events with 400+ attendees, and performed clerical work like data entry and correspondence.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h4>Computer Science TA — Project STEM, Coding 4 Youth</h4>
+          <p>Feb. 2022 — Jun. 2023</p>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Actively contributed to enhancement of courses by moderating and resolving technical issues and support tickets.</li>
+            <li>Worked with a team to redesign problems in both Java & Python for assignments, labs, projects, and exams.</li>
+            <li>Educated students in class settings of around 5 on a weekly basis; teaching Java, Python, Lua, and Scratch.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in" aria-labelledby="projects-heading">
+      <h3 id="projects-heading">Projects</h3>
+
+      <div class="projects-grid" role="list">
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(0)" onkeypress="if(event.key==='Enter') openProjectModal(0)">
+          <h4>CBDIF Framework</h4>
+          <p>A digital identity system focused on reducing bot accounts and streamlining authentication procedures.</p>
+          <div class="tags">
+            <span class="tag">Literature Review</span>
+            <span class="tag">SSO frameworks</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(1)" onkeypress="if(event.key==='Enter') openProjectModal(1)">
+          <h4>MTA Subway Hub</h4>
+          <p>Web application integrating real-time MTA API with interactive NYC map showcasing transit data.</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Express/Node</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </article>
+
+        <article class="project" role="listitem" tabindex="0" onclick="openProjectModal(2)" onkeypress="if(event.key==='Enter') openProjectModal(3)">
+          <h4>Lifetime Financial Planner</h4>
+          <p>Planner that allows users to model the outcomes of investments, assets, and events like mortgage and family death.</p>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">React</span>
+            <span class="tag">Express/Node</span>
+            <span class="tag">Jest/Cypress</span>
+            <span class="tag">Security</span>
+          </div>
+        </article>
+
+        <article class="project" role="listitem" tabindex="0" onclick="openProjectModal(6)" onkeypress="if(event.key==='Enter') openProjectModal(6)">
+          <h4>Cybersecurity Learning Tools</h4>
+          <p>Implemented high level overview of useful security tools for offensive security course.</p>
+          <div class="tags">
+            <span class="tag">Password Vault</span>
+            <span class="tag">Network Sniffing</span>
+            <span class="tag">Service Fingerprinting</span>
+            <span class="tag">Python</span>
+          </div>
+        </article>
+
+        <article class="project" role="listitem" tabindex="0" onclick="openProjectModal(12)" onkeypress="if(event.key==='Enter') openProjectModal(12)">
+          <h4>US Naval Labtainers</h4>
+          <p>Containerized environment for hands-on labs on exploits and implementing security mechanisms/defenses.</p>
+          <div class="tags">
+            <span class="tag">Ubuntu</span>
+            <span class="tag">Containerization</span>
+            <span class="tag">Virtual Machines</span>
+            <span class="tag">C, Ghidra, Wireshark, GDB, SQL</span>
+          </div>
+        </article>
+
+        <article class="project" role="listitem" tabindex="0" onclick="openProjectModal(13)" onkeypress="if(event.key==='Enter') openProjectModal(13)">
+          <h4>Web Application Security Testing</h4>
+          <p>Analyzed and tested a mock twitter clone web application to probe for and fix various security vulnerabilities.</p>
+          <div class="tags">
+            <span class="tag">Vulnerability Scanning & Remediation</span>
+            <span class="tag">Web Security</span>
+            <span class="tag">Linux, Apache, MySQL, PHP</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(3)" onkeypress="if(event.key==='Enter') openProjectModal(3)">
+          <h4>Food Insecurity</h4>
+          <p>A web application with list of searchable food pantries and their items, user profiles, and recipes page to add/share recipes. Followed best practices—structured directory layout, authenticated routes, error handling, and secure SQL queries.</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node/Express</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(4)" onkeypress="if(event.key==='Enter') openProjectModal(4)">
+          <h4>QA Platform</h4>
+          <p>Developed a Question-Answer platform, with features such as tags, comments, likes/dislikes, user/admin profiles. Security practices such as salted passwords with Bcrypt, and Express sessions for user authentication.</p>
+          <div class="tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">React</span>
+            <span class="tag">Express/Node</span>
+            <span class="tag">User Roles</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(5)" onkeypress="if(event.key==='Enter') openProjectModal(5)">
+          <h4>Technical Communication Portfolio</h4>
+          <p>A folder of various research examining food insecurity, environmental impact of data centers, online tutoring solutions, and drafting software products in the form of presentations, wireframes, and written documents.</p>
+          <div class="tags">
+            <span class="tag">Wireframes</span>
+            <span class="tag">Presentations</span>
+            <span class="tag">Writing</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(7)" onkeypress="if(event.key==='Enter') openProjectModal(7)">
+          <h4>Enigma Machine Simulator</h4>
+          <p>Mimics the encryption/decryption process of the WWII Enigma Machine via the command line.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">Dynamic Memory</span>
+            <span class="tag">Encryption/Decryption</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(8)" onkeypress="if(event.key==='Enter') openProjectModal(8)">
+          <h4>Deet Debugger</h4>
+          <p>Debugging tool for C programs that allows users to inspect and modify program state during execution.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">Debugging</span>
+            <span class="tag">Process Control</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(9)" onkeypress="if(event.key==='Enter') openProjectModal(9)">
+          <h4>Dynamic Memory Allocator</h4>
+          <p>Sample showcase of technical communication inlcuding wireframes, software presentations, and several papers.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">Valgrind</span>
+            <span class="tag">Criterion Unit Testing</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(10)" onkeypress="if(event.key==='Enter') openProjectModal(10)">
+          <h4>Matrix Operations</h4>
+          <p>Sample showcase of technical communication inlcuding wireframes, software presentations, and several papers.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">Binary Search Trees</span>
+            <span class="tag">Dynamic Memory</span>
+          </div>
+        </article>
+
+        <article class="project" class="project" role="listitem" tabindex="0" onclick="openProjectModal(11)" onkeypress="if(event.key==='Enter') openProjectModal(11)">
+          <h4>File Search/Replace Utility</h4>
+          <p>File search and replace utility implemented in C using getopt for command line input validation.</p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">File I/O</span>
+            <span class="tag">Dynamic Memory</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="quiclinks" class="fade-in">
+      <h3>Quick Links</h3>
+      <div class="quiclinks-grid" aria-labelledby="quiclinks-heading">
+        <aside style="padding-left:14px;">
+          <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px">
+            <a style="text-align: center;" href="#" class="cta" onclick="downloadResume();return false">Resume</a>
+            <a style="text-align: center;" href="https://github.com/shabudeen03" target="_blank" rel="noopener noreferrer" class="cta">GitHub</a>
+            <a style="text-align: center;" href="https://www.linkedin.com/in/guhfran" target="_blank" rel="noopener noreferrer" class="cta">LinkedIn</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Guhfran Shuhood • Built with clarity & focus.
+    </footer>
+  </div>
+
+  <!-- Modal System -->
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-hidden="true" aria-modal="true">
+    <div class="modal" role="document" id="modalContent" tabindex="-1">
+      <div class="modal-header">
+        <div>
+          <h4 id="modalTitle">Modal Title</h4>
+          <p id="modalSubtitle" style="color:var(--muted);margin:6px 0 0 0;font-size:13px"></p>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+
+      <div id="modalBody" style="margin-top:12px;color:var(--muted);font-size:15px">
+        Content Placeholder (User should not see this)
+      </div>
+
+      <div style="margin-top:18px;display:flex;gap:10px;justify-content:flex-end">
+        <a id="modalRepo" class="cta" href="#" target="_blank" rel="noopener noreferrer">View Repo</a>
+        <button class="btn secondary" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
 </html>
